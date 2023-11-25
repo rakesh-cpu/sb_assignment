@@ -49,8 +49,7 @@ As part of the [Secure Blink](https://www.secureblink.com/careers/65572ecc7bf50b
 
 
 ## End points
-   - http://localhost:8080/api/users/endpoints
-   - 
+   - http://localhost:8080/api/users/endpoints 
       1 userRouter.get("/login",loginUser);
       2 userRouter.get("/profile",admin, getUserDetails);
       3 userRouter.post("/forgotpassword", forgotPassword);
