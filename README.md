@@ -50,10 +50,11 @@ Technologies Used
 
 ## End points
    - http://localhost:8080/api/users/endpoints
-   1 userRouter.get("/login",loginUser);
-   2 userRouter.get("/profile",admin, getUserDetails);
-   3 userRouter.post("/forgotpassword", forgotPassword);
-   4 userRouter.put("/resetpassword/:resetToken", resetPassword);
-   5 userRouter.put("/updateprofile", authenticateByRoleAndEmail('user'), updateUserProfile);
-   6 userRouter.get("/users-list", authenticate, admin, getUsers);
-   7 userRouter.delete("/userDeletionByAdmin/:id", authenticate, admin, deleteUser);
+   - 
+      1 userRouter.get("/login",loginUser);
+      2 userRouter.get("/profile",admin, getUserDetails);
+      3 userRouter.post("/forgotpassword", forgotPassword);
+      4 userRouter.put("/resetpassword/:resetToken", resetPassword);
+      5 userRouter.put("/updateprofile", authenticateByRoleAndEmail('user'), updateUserProfile);
+      6 userRouter.get("/users-list", authenticate, admin, getUsers);
+      7 userRouter.delete("/userDeletionByAdmin/:id", authenticate, admin, deleteUser);
