@@ -30,11 +30,7 @@ Technologies Used
          ii) VSCODE
 
  ## Overview
-    As part of the [Secure Blink](https://www.secureblink.com/careers/65572ecc7bf50b6baae8aaf0)  Internship Assignment,
-    I have developed an Express.js application that fulfills the specified rules and requirements. 
-    This web application leverages the Express.js framework for building robust APIs, utilizes Node.js for server-side scripting,
-    and employs MySQL as the underlying database. Additionally, various libraries, including JWT, have been integrated to enhance
-    authentication and authorization processes.
+    As part of the [Secure Blink](https://www.secureblink.com/careers/65572ecc7bf50b6baae8aaf0)  Internship Assignment, I have developed an Express.js application that fulfills the specified rules and requirements. This web application leverages the Express.js framework for building robust APIs, utilizes Node.js for server-side scripting, and employs MySQL as the underlying database. Additionally, various libraries, including JWT, have been integrated to enhance authentication and authorization processes.
 
 ## Installations:
    - npm init
@@ -54,10 +50,10 @@ Technologies Used
 
 ## End points
    - http://localhost:8080/api/users/endpoints
-userRouter.get("/login",loginUser);
-userRouter.get("/profile",admin, getUserDetails);
-userRouter.post("/forgotpassword", forgotPassword);
-userRouter.put("/resetpassword/:resetToken", resetPassword);
-userRouter.put("/updateprofile", authenticateByRoleAndEmail('user'), updateUserProfile);
-userRouter.get("/users-list", authenticate, admin, getUsers);
-userRouter.delete("/userDeletionByAdmin/:id", authenticate, admin, deleteUser);
+   1 userRouter.get("/login",loginUser);
+   2 userRouter.get("/profile",admin, getUserDetails);
+   3 userRouter.post("/forgotpassword", forgotPassword);
+   4 userRouter.put("/resetpassword/:resetToken", resetPassword);
+   5 userRouter.put("/updateprofile", authenticateByRoleAndEmail('user'), updateUserProfile);
+   6 userRouter.get("/users-list", authenticate, admin, getUsers);
+   7 userRouter.delete("/userDeletionByAdmin/:id", authenticate, admin, deleteUser);
